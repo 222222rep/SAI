@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування з кіберзахисту</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select,
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Опитування з кіберзахисту</h1>
+        <form action="#">
+            <label for="question1">1. З якими кіберзагрозами ви стикаєтеся найчастіше?</label>
+            <select id="question1" name="question1">
+                <option value="virus">Віруси та шкідливе ПО</option>
+                <option value="phishing">Фішингові атаки</option>
+                <option value="fraud">Шахрайство з кредитними картками</option>
+                <option value="data_theft">Крадіжка особистих даних</option>
+                <option value="other">Інше</option>
+            </select>
+
+            <label for="question2">2. Які функції кіберзахисту для вас найважливіші?</label>
+            <select id="question2" name="question2">
+                <option value="virus_protection">Захист від вірусів та шкідливого ПО</option>
+                <option value="data_protection">Захист особистих даних</option>
+                <option value="privacy">Захист конфіденційності в Інтернеті</option>
+                <option value="parental_control">Батьківський контроль</option>
+                <option value="other">Інше</option>
+            </select>
+
+            <label for="question3">3. Які фактори вплинуть на ваше рішення про використання SafeAI?</label>
+            <select id="question3" name="question3">
+                <option value="effectiveness">Ефективність захисту</option>
+                <option value="ease_of_use">Простота використання</option>
+                <option value="cost">Вартість</option>
+                <option value="brand_reputation">Репутація бренду</option>
+                <option value="other">Інше</option>
+            </select>
+
+            <label for="question4">4. Скільки ви готові платити за систему кіберзахисту?</label>
+            <select id="question4" name="question4">
+                <option value="free">Безкоштовно</option>
+                <option value="up_to_5">До $5 на місяць</option>
+                <option value="5_to_10">$5-$10 на місяць</option>
+                <option value="10_to_20">$10-$20 на місяць</option>
+                <option value="more_than_20">Більше $20 на місяць</option>
+            </select>
+
+            <label for="question5">5. Які канали зв'язку ви б хотіли використовувати для підтримки SafeAI?</label>
+            <select id="question5" name="question5">
+                <option value="email">Електронна пошта</option>
+                <option value="phone">Телефон</option>
+                <option value="chat">Чат</option>
+                <option value="forum">Форум</option>
+                <option value="other">Інше</option>
+            </select>
+
+            <label for="question6">6. Які мовні версії SafeAI ви б хотіли бачити?</label>
+            <select id="question6" name="question6">
+                <option value="ukrainian">Українська</option>
+                <option value="english">Англійська</option>
+                <option value="other">Інша</option>
+            </select>
+
+            <label for="question7">7. Чи хотіли б ви отримувати персоналізовані рекомендації щодо кібербезпеки від
+                SafeAI?</label>
+            <select id="question7" name="question7">
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+
+            <label for="question8">8. Чи хотіли б ви мати можливість використовувати SafeAI на кількох
+                пристроях?</label>
+            <select id="question8" name="question8">
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+
+            <label for="question9">9. Чи хотіли б ви мати можливість використовувати SafeAI для захисту свого
+                бізнесу?</label>
+            <select id="question9" name="question9">
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+
+            <label for="question10">10. Чи хотіли б ви додати щось ще?</label>
+            <input type="text" id="question10" name="question10">
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>
+</body>
+
+</html>
